@@ -13,7 +13,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven cloud
-      run: mvn -B verify sonar:sonar -Dsonar.projectKey=(Project_Key) -Dsonar.organization=(Organization_name) -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=(lslgithubsonar1) -Dsonar.organization=(lsl-1234567) -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
       env:
         GITHUB_TOKEN: ${{ secrets.Github-token-SL }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
